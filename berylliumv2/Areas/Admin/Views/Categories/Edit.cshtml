@@ -1,0 +1,32 @@
+﻿@model Work
+<h1 class="mb-4">Edit a Work</h1>
+<form class="/admin/categories/edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <label asp-for="Img"></label>
+            <input asp-for="Img" class="form-control" />
+            <span class="text-danger" asp-validation-for="Img"> </span>
+
+        </div>
+        <div class="col-md-4 mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class=" form-control" />
+            <span class="text-danger" asp-validation-for="Name"> </span>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label asp-for="City"></label>
+            <input asp-for="City" class="form-control" />
+            <span class="text-danger" asp-validation-for="City"> </span>
+
+        </div>
+        <img class="d-block mb-3" src="~/images/@Model.Path" style="width:50px; aspect-ratio:1/1; object-fit:cover" />
+
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Path" />
+        <div class="col-md-4 mb-3">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </div>
+
+</form>

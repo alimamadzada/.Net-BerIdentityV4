@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\source\\repos\\berylliumv2\\berylliumv2\\berylliumv2.csproj": {}
+    "C:\\Users\\Asus\\source\\repos\\berylliumV2\\berylliumv2\\berylliumv2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\source\\repos\\berylliumv2\\berylliumv2\\berylliumv2.csproj": {
+    "C:\\Users\\Asus\\source\\repos\\berylliumV2\\berylliumv2\\berylliumv2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\berylliumv2\\berylliumv2\\berylliumv2.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\berylliumV2\\berylliumv2\\berylliumv2.csproj",
         "projectName": "berylliumv2",
-        "projectPath": "C:\\Users\\Asus\\source\\repos\\berylliumv2\\berylliumv2\\berylliumv2.csproj",
+        "projectPath": "C:\\Users\\Asus\\source\\repos\\berylliumV2\\berylliumv2\\berylliumv2.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\source\\repos\\berylliumv2\\berylliumv2\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\source\\repos\\berylliumV2\\berylliumv2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
