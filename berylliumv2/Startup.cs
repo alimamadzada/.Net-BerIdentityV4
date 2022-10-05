@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using berylliumv2.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace berylliumv2
 {
@@ -26,6 +28,19 @@ namespace berylliumv2
         {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
             services.AddControllersWithViews();
+            services.AddIdentity<AppUser, IdentityRole>(options =>
+            {
+                options.User.RequireUniqueEmail = true;
+
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -34,6 +49,7 @@ namespace berylliumv2
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthorization();
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

@@ -1,0 +1,35 @@
+﻿@model List<Feature>
+
+<div class="gtco-section gto-features">
+    <div class="gtco-container">
+        <div class="row  feature-wrapper">
+            <partial name="_FeaturePartial" />
+        </div>
+        <div class="text-center ">
+            <a href="#" class="btn btn-danger load-features ">LOAD MORE</a>
+        </div>
+    </div>
+</div>
+<input type="hidden" value="@ViewBag.FeatureCount" id="FeatureCount"/>
+@section scripts{
+    <script>
+        let skip = 2;
+        featureCount = $("#FeatureCount").val();
+        $(".load-features ").click(function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: "/home/LoadMoreFeature?skip=" + skip,
+                method: "GET",
+                success: function (res) {
+                        $(".feature-wrapper").append(res);
+                    skip += 2;
+                    if (skip >= featureCount) {
+                        $(".load-features").remove();
+                    }
+
+                }
+
+            })
+        });
+    </script>
+}

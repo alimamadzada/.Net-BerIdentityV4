@@ -155,3 +155,17 @@ C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Areas\
 C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Areas\Admin\Views\Messages\Edit.cshtml.g.cs
 C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Areas\Admin\Views\Messages\Index.cshtml.g.cs
 C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Shared\_ArchitecturePartial.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Shared\_WorkPartial.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Shared\_NewsPartial.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Shared\_TestimonialsPartial.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Shared\_FeaturePartial.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Home\Feature.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Home\SearchFeature.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Asus\source\repos\berylliumV2\berylliumv2\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs

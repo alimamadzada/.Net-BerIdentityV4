@@ -1,0 +1,16 @@
+﻿@model List<Feature>
+
+@foreach (Feature item in Model)
+{
+    <div class="col-md-6">
+        <div class="feature-left">
+            <i class="@item.Icon"></i>
+            <div class="copy">
+                <h3>@item.Name</h3>
+                <p>@item.Content</p>
+                <p><a href="#" class="gtco-more">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+}
+

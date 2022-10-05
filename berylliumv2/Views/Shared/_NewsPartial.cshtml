@@ -1,0 +1,12 @@
+﻿@model List<News>
+
+
+@foreach (News item in Model)
+{
+<li>
+    <a href="#">
+        <span class="post-date">@item.Date</span>
+        <h3>@item.Title</h3>
+        <p>@item.Content</p>
+    </a>
+</li>}

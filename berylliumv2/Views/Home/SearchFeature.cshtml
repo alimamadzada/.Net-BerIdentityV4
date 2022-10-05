@@ -1,0 +1,29 @@
+﻿<div class="container pt-150">
+    <input type="text" placeholder="Search features" class="form-control form-control-lg" id="search-input-features" />
+</div>
+<div class="container p-5">
+    <div class="row  feature-wrapper  justify-content-center ">
+
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $("#search-input-features").keyup(function () {
+            let query = $("#search-input-features").val();
+            if (query.length >= 1) {
+                $.ajax({
+                    url: "/home/SearchFeatureProcess?query=" + query,
+                    method: "GET",
+                    success: function (res) {
+                        $(".feature-wrapper").empty();
+                        $(".feature-wrapper").append(res);
+                    }
+                })
+            }
+            else
+                $(".feature-wrapper").empty();
+        });
+
+    </script>
+}

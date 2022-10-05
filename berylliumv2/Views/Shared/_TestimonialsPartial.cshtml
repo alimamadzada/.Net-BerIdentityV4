@@ -1,0 +1,9 @@
+﻿@model List<Testimonials>
+
+
+@foreach (Testimonials item in Model)
+{
+<blockquote>
+    <p>&ldquo;@item.Aphorism&ldquo;</p>
+    <p class="author"><cite>&mdash; @item.Author</cite></p>
+</blockquote>}

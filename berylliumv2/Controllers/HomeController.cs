@@ -28,7 +28,7 @@ namespace berylliumv2.Controllers
                 works = await db.Works.ToListAsync(),
                 news = await db.News.ToListAsync(),
                 testimonials = await db.Testimonials.ToListAsync(),
-                features = await db.Features.ToListAsync(),
+                features = await db.Features.Take(3).ToListAsync(),
             };
             return View(ivm);
         }
@@ -51,6 +51,23 @@ namespace berylliumv2.Controllers
                 TempData["result"] = "Message was not Send.";
                 return RedirectToAction("Index");
             }
+        }
+        public async Task<IActionResult> Feature()
+        {
+            ViewBag.FeatureCount = db.Features.Count();
+            return View(await db.Features.Take(2).ToListAsync());
+        }
+        public async Task<IActionResult> LoadMoreFeature(int skip)
+        {
+            return PartialView("_FeaturePartial", await db.Features.Skip(skip).Take(2).ToListAsync());
+        }
+        public IActionResult SearchFeature()
+        {
+            return View();
+        }
+        public async Task<IActionResult> SearchFeatureProcess(string query)
+        {
+            return PartialView("_FeaturePartial", await db.Features.Where(x => x.Name.ToLower().Contains(query.ToLower())).ToListAsync());
         }
     }
 }

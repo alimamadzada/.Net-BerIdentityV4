@@ -1,0 +1,13 @@
+﻿@model List<ArchitectureImage>
+
+
+@foreach (ArchitectureImage item in Model)
+{
+<div class="item">
+    <a href="#">
+        <img src="~/images/@item.Path" >
+        <div class="slider-copy">
+            <h2>@item.Text</h2>
+        </div>
+    </a>
+</div>}
